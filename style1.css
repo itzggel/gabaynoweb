@@ -1,0 +1,380 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  margin: 0;
+  min-height: 80vh;
+  background-image: url("images/IMG_20260214_235419_175.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: transparent;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+
+/*ICON*/
+.info-box i {
+  font-size: 18px;
+  color: #00abf0;
+  width: 22px;
+}
+
+.info-box a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* HOME */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 52px;
+}
+
+.home-section h1 span {
+  color: #1f2226;
+}
+
+.home-section h3 {
+  font-size:26px;
+  margin: 10px 0;
+}
+
+.home-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 15px;
+  color: #cfd8e3;
+}
+
+/* ABOUT */
+.about {
+  padding: 100px 10% 50px;
+}
+
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #9acd32;
+}
+
+/*ABOUT CONTAINER*/
+.about-container {
+  display: flex;
+  flex-direction: column;   /* para maging vertical */
+  align-items: center;      /* center lahat */
+  gap: 40px;
+}
+
+/* PROFILE IMAGE */
+.about-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid grey;
+}
+
+/* ABOUT TEXT */
+.about-text,
+.about-info {
+  width: 100%;
+  color: #b0b0b0
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-text,
+.about-info > div {
+  background: rgba(0, 0, 0, 0.6);   /* black transparent */
+  padding: 20px;
+  border-radius: 10px;
+  color: #b0b0b0;
+  flex: 1;
+  max-width: 300px;
+}
+
+/* SKILLS LIST */
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.skills-list li {
+  margin-bottom: 5px;
+  color: #cfd8e3;
+}
+
+/* SCHOOL INFO */
+.school-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #9acd32;
+}
+
+.school-info p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #cfd8e3;
+}
+
+/* ABOUT INFO BOXES */
+.about-info {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Current Skills Title */
+.skills-title {
+  color: #9acd32;   /* yellowish-green */
+}
+
+/* School Labels */
+.school-info p strong {
+  color: #808080;   /* grey */
+}
+
+/* GALLERY */
+
+.gallery h2 {
+  text-align: center;
+}
+
+.slider-wrapper {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  display: flex;             /* flex row by default */
+  flex-wrap: wrap;           /* mag-wrap sa next row kapag puno na ang first row */
+  justify-content: center;   /* i-center lahat ng images */
+  gap: 15px;                 /* space sa pagitan ng images */
+  padding: 20px;
+}
+
+.slider-card {
+  width: 150px;                 /* Image size */
+  height: 150px;
+  border-radius: 15px;          /* Optional: rounded corners */
+  background-size: cover;      /* Fill the container without cropping */
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .5s ease;
+  cursor: pointer;
+  
+}
+
+.slider-card > .row {
+  display: flex;
+  color: white;
+}
+
+.slider-card .icon {
+  background: #223;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 250px;                
+  height: 250px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.9);  /* Optional shadow effect */
+}
+
+/* SLIDER IMAGES */
+.slider-card[for="c1"] { background-image: url("images/Screenshot_20260218-075127.jpg"); }
+.slider-card[for="c2"] { background-image: url("images/IMG_20260201_153406_610.jpg"); }
+.slider-card[for="c3"] { background-image: url("images/IMG_20260114_192514_509.jpg"); }
+.slider-card[for="c4"] { background-image: url("images/IMG_20260222_021923_605.jpg"); }
+.slider-card[for="c5"] { background-image: url("images/IMG_20251122_183611_432.jpg"); }
+
+.slider-card[for="c6"] { background-image: url("images/IMG_20251009_213301_000.jpeg"); }
+.slider-card[for="c7"] { background-image: url("images/IMG_20251110_221146_348.jpg"); }
+.slider-card[for="c8"] { background-image: url("images/file_00000000ca70720899eae12d118093d5.png"); }
+.slider-card[for="c9"] { background-image: url("images/IMG_20251203_174755_868.jpg"); }
+.slider-card[for="c10"] { background-image: url("images/IMG_20260223_125214_681.jpg"); }
+
+.slider-card[for="c11"] { background-image: url("images/IMG_20260223_055221_248.jpg"); }
+.slider-card[for="c12"] { background-image: url("images/KAPI_260223062615932.jpg"); }
+.slider-card[for="c13"] { background-image: url("images/IMG_20260223_123143_846.jpg"); }
+.slider-card[for="c14"] { background-image: url("images/KAPI_260223062809695.jpg"); }
+.slider-card[for="c15"] { background-image: url("images/IMG_20260223_122710_841.jpg"); }
+
+/* VIDEO SECTION */
+.video-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.video-section video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  transition: 0.3s ease;
+}
+
+.video-section video:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-box a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.info-box span {
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info-box h4 {
+  margin: 10px 0 5px;
+  color: #8f8b39;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.form {
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  background: #1a1a1a;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.form textarea {
+  height: 150px
+
+
