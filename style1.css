@@ -258,7 +258,7 @@ input:checked + label {
 }
 
 /* SLIDER IMAGES */
-.slider-card[for="c1"] { background-image: url("images/img21.png"); }
+.slider-card[for="c1"] { background-image: url("images/img.png"); }
 .slider-card[for="c2"] { background-image: url("images/img2.jpeg"); }
 .slider-card[for="c3"] { background-image: url("images/img3.jpg"); }
 .slider-card[for="c4"] { background-image: url("images/img4.jpg"); }
