@@ -247,7 +247,7 @@ section {
   justify-content: center;
 }
 
-input {
+.slider-container input {
   display: none;
 }
 
