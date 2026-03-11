@@ -268,13 +268,13 @@ input:checked + label {
 .slider-card[for="c7"] { background-image: url("images/img7.jpg"); }
 .slider-card[for="c8"] { background-image: url("images/img8.jpg"); }
 .slider-card[for="c9"] { background-image: url("images/img9.jpg"); }
-.slider-card[for="c10"] { background-image: url("images/img16.jpg"); }
+.slider-card[for="c10"] { background-image: url("images/IMG_20260311_164120_491.jpg"); }
 
 .slider-card[for="c11"] { background-image: url("images/img11.jpg"); }
 .slider-card[for="c12"] { background-image: url("images/img12.jpg"); }
-.slider-card[for="c13"] { background-image: url("images/img13.jpg"); }
-.slider-card[for="c14"] { background-image: url("images/img14.jpg"); }
-.slider-card[for="c15"] { background-image: url("images/img17.jpg"); }
+.slider-card[for="c13"] { background-image: url("images/IMG_20260308_175210_310.jpg"); }
+.slider-card[for="c14"] { background-image: url("images/IMG_20260308_175206_722.jpg"); }
+.slider-card[for="c15"] { background-image: url("images/IMG_20260307_103333_656.jpg"); }
 
 /* VIDEO SECTION */
 .video-section {
