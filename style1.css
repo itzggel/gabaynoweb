@@ -391,3 +391,14 @@ input:checked + label {
   height: 150px;
   }
 
+.music{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.music audio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
