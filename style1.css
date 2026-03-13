@@ -38,11 +38,22 @@ body {
   font-weight: 700;
 }
 
+.navbar {
+  display: flex;          
+  gap: 30px;              
+  align-items: center;    
+}
+
 .navbar a {
-  margin-left: 30px;
   text-decoration: none;
   color: white;
   font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #9acd32;  
 }
 
 section {
@@ -391,14 +402,37 @@ input:checked + label {
   height: 150px;
   }
 
-.music{
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
+.spotify-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(0,0,0,0.6);  /* semi-transparent card */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 50px auto; /* center sa page */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
 }
 
-.music audio{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.spotify-player img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-info .song-title {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.player-info audio {
+  width: 250px;
 }
